@@ -9,13 +9,10 @@ import About from './components/pages/About';
 import Gallery from './components/pages/Gallery';
 import Contact from './components/pages/Contact';
 import ImageSlide from './components/ImageSliders/ImageSlide';
-
 function App() {
   return (
-    <div className="App">
-      
+    <div className="App">   
       <Navbar />
-
       <Routes>
          <Route path="/" element={<ImageSlide />} />
         <Route path="/home" element={<Home />} />
@@ -24,7 +21,8 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-
+      
+      
     </div>
   );
 }

@@ -30,42 +30,38 @@ const ImageSlide = () => {
   }, []);
 
   return (
-  <div className="hero-container">
-
-    {slides.map((slide, index) => (
-      <div
-        key={index}
-        className={`hero-slide ${index === current ? "active" : ""}`}
-        style={{ backgroundImage: `url(${slide.image})` }}
-      >
-        <div className="overlay"></div>
-
-        <div className="hero-text">
-          <h4>{slide.subtitle}</h4>
-          <h1>{slide.title}</h1>
-          <p>{slide.description}</p>
-        </div>
+    <div className="hero-container">
+      <div className="carousel-track">
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`hero-slide ${index === current ? "active" : ""}`}
+            style={{ backgroundImage: `url(${slide.image})`, transform: `translateX(${100 * (index - current)}%)` }}
+          >
+            <div className="overlay"></div>
+            <div className="hero-text">
+              <h4>{slide.subtitle}</h4>
+              <h1>{slide.title}</h1>
+              <p>{slide.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
-    ))}
-
-    <div className="hero-buttons">
-      <button
-        onClick={() =>
-          setCurrent((current - 1 + slides.length) % slides.length)
-        }
-      >
-        ❮
-      </button>
-
-      <button
-        onClick={() =>
-          setCurrent((current + 1) % slides.length)
-        }
-      >
-        ❯
-      </button>
+      <div className="hero-buttons">
+        <button
+          className="carousel-btn prev"
+          onClick={() => setCurrent((current - 1 + slides.length) % slides.length)}
+        >
+          ❮
+        </button>
+        <button
+          className="carousel-btn next"
+          onClick={() => setCurrent((current + 1) % slides.length)}
+        >
+          ❯
+        </button>
+      </div>
     </div>
-
-  </div>
-);
+  );
 }
+export default ImageSlide;

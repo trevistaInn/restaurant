@@ -1,0 +1,51 @@
+.menu-section {
+  background-image: url(../../assets/assets/8.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  padding: 60px;
+}
+
+.menu-title {
+  font-size: 72px;
+  font-weight: bold;
+  margin-bottom: 48px;
+}
+
+.menu-columns {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+
+.menu-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.menu-item h3 {
+  font-family: cursive;
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.menu-item p {
+  font-size: 28px;
+  opacity: 0.9;
+}
+
+.menu-item span {
+  font-weight: bold;
+  font-size: 32px;
+  display: block;
+  margin-top: 8px;
+}
