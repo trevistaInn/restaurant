@@ -27,7 +27,7 @@ const ImageSlide = () => {
     }, 4000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, );
 
   return (
     <div className="hero-container">

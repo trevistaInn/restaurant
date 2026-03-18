@@ -9,6 +9,8 @@ import About from './components/pages/About';
 import Gallery from './components/pages/Gallery';
 import Contact from './components/pages/Contact';
 import ImageSlide from './components/ImageSliders/ImageSlide';
+import About1 from './components/About1/About1.jsx';
+
 function App() {
   return (
     <div className="App">   
@@ -21,7 +23,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      
+     
       
     </div>
   );

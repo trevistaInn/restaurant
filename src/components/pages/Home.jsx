@@ -6,7 +6,8 @@ import DeliciousSection from "../../components/DeliciousSection/DeliciousSection
 // import background from "../../assets/assets/main-13.jpg";
 import ImageSlide from "../ImageSliders/ImageSlide";
 import Gallery1 from "../../components/Gallery1/Gallery1";
-
+import Chef from "../../components/Chef/Chef";
+// import BlogSection from '../../components/BlogSection/BlogSection';
 const Home = () => {
   return (
     <>
@@ -15,11 +16,16 @@ const Home = () => {
       </div> */}
 
       <ImageSlide />
-
+      <DeliciousSection />
       <Features/>
       <Menu1/>
-      <DeliciousSection />
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <Gallery1/>
+      <Chef/>
+       {/* <BlogSection/> */}
     </>
   );
 };
