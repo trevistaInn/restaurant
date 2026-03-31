@@ -3,3 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fffaf5;
+  color: #222;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-content {
+  flex: 1;
+}

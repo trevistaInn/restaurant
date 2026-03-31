@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import { Routes, Route } from 'react-router-dom';
 import './index.css'
+import Footer from './components/Footer/Footer';
 
 
 import Home from './components/pages/Home';
@@ -15,16 +16,17 @@ function App() {
   return (
     <div className="App">   
       <Navbar />
-      <Routes>
-         <Route path="/" element={<ImageSlide />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/menu" element={<Menu />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-     
-      
+      <main className="app-content">
+        <Routes>
+           <Route path="/" element={<ImageSlide />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
+      <Footer />
     </div>
   );
 }

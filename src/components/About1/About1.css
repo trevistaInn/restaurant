@@ -1,170 +1,385 @@
-/* ================= HEADER SECTION ================= */
-
-.About-header{
-    background-image: url('../../assets/assets/About.png');
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    gap: 10px;
-    color: white;
-    text-align: center;
+.about-page {
+  background:
+    radial-gradient(circle at top left, rgba(255, 173, 51, 0.18), transparent 26%),
+    radial-gradient(circle at bottom right, rgba(226, 73, 54, 0.12), transparent 24%),
+    linear-gradient(180deg, #fffaf4 0%, #fffefc 46%, #fff5ee 100%);
+  color: #231815;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
 }
 
-.About-header h1{
-    font-weight: 300;
-    font-size: max(4.5vw,22px);
-    margin: 0;
+.about-hero {
+  padding: 4.5rem 1.5rem 5.5rem;
 }
 
-.About-header p{
-    font-weight: 200;
-    font-size: max(2vw,16px);
-    margin: 0;
+.about-hero__inner,
+.about-story,
+.about-gallery,
+.about-promise,
+.about-banner__content {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
 }
 
-
-/* ================= WELCOME SECTION ================= */
-
-.Welcome{
-    text-align: center;
-    padding: 50px 20px;
+.about-hero__inner {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 2.5rem;
+  align-items: center;
 }
 
-.Welcome h1{
-    margin-bottom: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-size: max(3vw,22px);
+.about-kicker,
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ffe0ba 0%, #ffd2d9 100%);
+  color: #ad4327;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
 }
 
-.Welcome p{
-    margin-top: 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+.section-tag--light {
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff1e6;
 }
 
-
-/* ================= CHEF IMAGES SECTION ================= */
-
-.chef-container{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-    flex-wrap: wrap;
+.about-hero__copy h1,
+.about-story__panel h2,
+.about-gallery__header h2,
+.about-promise__intro h2,
+.about-banner__content h2 {
+  font-size: clamp(2.6rem, 5vw, 5.2rem);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
 }
 
-.Images-1{
-    background-image: url('../../assets/assets/chef-2.png');
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    width: 300px;
-    border-radius: 10px;
+.about-lead,
+.about-story__panel p,
+.gallery-copy p,
+.promise-card p,
+.about-banner__content p {
+  font-size: 1.04rem;
+  line-height: 1.85;
+  color: #59443d;
+  font-family: "Poppins", sans-serif;
 }
 
-.Images-2{
-    background-image: url('../../assets/assets/Chef-1.png');
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    width: 300px;
-    border-radius: 10px;
+.about-lead {
+  max-width: 650px;
+  margin-top: 1.25rem;
 }
 
-
-/* ================= STORY TITLE ================= */
-
-.section-title{
-    text-align: center;
-    position: relative;
-    margin: 60px 0 30px;
+.about-hero__note {
+  margin-top: 1.8rem;
+  width: min(420px, 100%);
+  padding: 1.25rem 1.3rem;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(224, 102, 60, 0.16);
+  box-shadow: 0 18px 42px rgba(111, 41, 23, 0.1);
+  backdrop-filter: blur(10px);
 }
 
-.section-title span{
-    font-size: 28px;
-    font-weight: bold;
-    background: white;
-    padding: 0 20px;
+.about-hero__note span {
+  display: inline-block;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #d54f2f;
+  margin-bottom: 0.45rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-family: "Poppins", sans-serif;
 }
 
-.section-title::before{
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #ccc;
-    z-index: -1;
+.about-hero__note p {
+  line-height: 1.65;
+  color: #4f3d37;
 }
 
-
-/* ================= STORY PARAGRAPH ================= */
-
-.section-para{
-    text-align: center;
-    margin-top: 20px;
+.about-hero__visuals {
+  position: relative;
+  min-height: 620px;
 }
 
-.section-para h3{
-    margin-bottom: 10px;
+.hero-card {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 0 26px 60px rgba(85, 29, 18, 0.18);
+  background: #fff;
 }
 
-.section-para p{
-    max-width: 600px;
-    margin: auto;
-    line-height: 1.6;
+.hero-card img,
+.gallery-tall img,
+.gallery-stack img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-
-/* ================= BOX SECTION ================= */
-
-.box-container{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+.hero-card--large {
+  inset: 2.5rem 0 0 4rem;
 }
 
-.box{
-    border: 1px solid #ddd;
-    padding: 25px;
-    width: 250px;
-    text-align: center;
-    background: #fff;
-
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+.hero-card--small {
+  width: 220px;
+  height: 240px;
+  border: 10px solid rgba(255, 250, 244, 0.95);
 }
 
-
-/* ================= ABOUT CHEF SECTION ================= */
-
-.About-Chef{
-    background-image: url('../../assets/assets/Newo-4.png');
-    background-size: cover;
-    background-position: center;
-
-    height: 700px;
-    margin: 120px auto;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-    color: white;
-    padding: 20px;
+.hero-card--small.top {
+  top: 0;
+  left: 0;
+  transform: rotate(-6deg);
 }
 
+.hero-card--small.bottom {
+  right: 0;
+  bottom: 0;
+  transform: rotate(7deg);
+}
+
+.about-story {
+  padding: 2rem 0 5rem;
+}
+
+.about-story__grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.about-story__panel {
+  padding: 2.5rem;
+  border-radius: 36px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 244, 236, 0.98) 100%);
+  border: 1px solid rgba(210, 99, 61, 0.12);
+  box-shadow: 0 18px 48px rgba(96, 33, 19, 0.08);
+}
+
+.about-story__panel p + p {
+  margin-top: 0.9rem;
+}
+
+.about-story__stats {
+  display: grid;
+  gap: 1rem;
+}
+
+.story-stat {
+  padding: 1.8rem;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #ff7b54 0%, #ffb26b 100%);
+  color: #fff9f3;
+  box-shadow: 0 18px 38px rgba(183, 76, 38, 0.22);
+}
+
+.story-stat:nth-child(2) {
+  background: linear-gradient(135deg, #ff5f6d 0%, #ffc371 100%);
+}
+
+.story-stat:nth-child(3) {
+  background: linear-gradient(135deg, #d66d75 0%, #e29587 100%);
+}
+
+.story-stat h3 {
+  font-size: 2.5rem;
+  margin-bottom: 0.45rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+}
+
+.story-stat p {
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-gallery {
+  padding: 0 0 5rem;
+}
+
+.about-gallery__header {
+  max-width: 760px;
+  margin-bottom: 2rem;
+}
+
+.about-gallery__layout {
+  display: grid;
+  grid-template-columns: 1.05fr 0.8fr 0.9fr;
+  gap: 1.2rem;
+  align-items: stretch;
+}
+
+.gallery-tall,
+.gallery-stack img,
+.gallery-copy {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.gallery-tall {
+  min-height: 560px;
+  box-shadow: 0 22px 50px rgba(95, 35, 20, 0.14);
+}
+
+.gallery-stack {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.gallery-stack img {
+  min-height: 270px;
+  box-shadow: 0 18px 40px rgba(95, 35, 20, 0.12);
+}
+
+.gallery-copy {
+  padding: 2rem;
+  background: #fff;
+  border: 1px solid rgba(205, 97, 61, 0.12);
+  box-shadow: 0 18px 42px rgba(95, 35, 20, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gallery-copy h3,
+.promise-card h3 {
+  font-size: 1.55rem;
+  margin-bottom: 0.9rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+}
+
+.gallery-copy p + p {
+  margin-top: 1rem;
+}
+
+.about-promise {
+  padding: 0 0 5rem;
+}
+
+.about-promise__intro {
+  max-width: 720px;
+  margin-bottom: 1.75rem;
+}
+
+.about-promise__cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.promise-card {
+  padding: 2rem;
+  border-radius: 30px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 244, 237, 0.96) 100%);
+  border: 1px solid rgba(213, 92, 53, 0.12);
+  box-shadow: 0 18px 38px rgba(96, 33, 19, 0.08);
+}
+
+.about-banner {
+  padding: 5rem 1.5rem;
+  background:
+    linear-gradient(rgba(47, 18, 14, 0.62), rgba(47, 18, 14, 0.68)),
+    url("/images/img_4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.about-banner__content {
+  text-align: center;
+  max-width: 850px;
+}
+
+.about-banner__content h2,
+.about-banner__content p {
+  color: #fff7f0;
+}
+
+@media (max-width: 1024px) {
+  .about-hero__inner,
+  .about-story__grid,
+  .about-gallery__layout,
+  .about-promise__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero__visuals {
+    min-height: 540px;
+  }
+
+  .hero-card--large {
+    inset: 2.5rem 1rem 0 2.5rem;
+  }
+
+  .about-gallery__header,
+  .about-promise__intro {
+    max-width: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .about-hero {
+    padding: 3rem 1rem 4rem;
+  }
+
+  .about-hero__inner,
+  .about-story,
+  .about-gallery,
+  .about-promise,
+  .about-banner__content {
+    width: min(1180px, calc(100% - 1rem));
+  }
+
+  .about-hero__copy h1,
+  .about-story__panel h2,
+  .about-gallery__header h2,
+  .about-promise__intro h2,
+  .about-banner__content h2 {
+    font-size: clamp(2.2rem, 10vw, 3.4rem);
+  }
+
+  .about-hero__visuals {
+    min-height: 420px;
+  }
+
+  .hero-card--large {
+    inset: 1.6rem 0.4rem 0 1.3rem;
+  }
+
+  .hero-card--small {
+    width: 140px;
+    height: 155px;
+    border-width: 6px;
+  }
+
+  .about-story__panel,
+  .gallery-copy,
+  .promise-card {
+    padding: 1.5rem;
+  }
+
+  .gallery-tall {
+    min-height: 360px;
+  }
+
+  .gallery-stack img {
+    min-height: 220px;
+  }
+
+  .about-banner {
+    padding: 4rem 1rem;
+  }
+}
