@@ -18,7 +18,7 @@ function App() {
       <Navbar />
       <main className="app-content">
         <Routes>
-           <Route path="/" element={<ImageSlide />} />
+           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/about" element={<About />} />
