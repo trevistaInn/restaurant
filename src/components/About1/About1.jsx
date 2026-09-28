@@ -55,13 +55,13 @@ const About1 = () => {
 
           <div className="about-hero__visuals">
             <div className="hero-card hero-card--large">
-              <img src="/images/img_7.jpg" alt="Restaurant dining table" />
+              <img src="./images/img_7.jpg" alt="Restaurant dining table" />
             </div>
             <div className="hero-card hero-card--small top">
-              <img src="/images/img_5.jpg" alt="Plated signature dish" />
+              <img src="./images/img_5.jpg" alt="Plated signature dish" />
             </div>
             <div className="hero-card hero-card--small bottom">
-              <img src="/images/img_3.jpg" alt="Chef prepared dish" />
+              <img src="./images/img_3.jpg" alt="Chef prepared dish" />
             </div>
           </div>
         </div>
@@ -105,11 +105,11 @@ const About1 = () => {
 
         <div className="about-gallery__layout">
           <div className="gallery-tall">
-            <img src="/images/img_8.jpg" alt="Special plated dish" />
+            <img src="./images/img_8.jpg" alt="Special plated dish" />
           </div>
           <div className="gallery-stack">
-            <img src="/images/img_2.jpg" alt="Fresh dish with garnish" />
-            <img src="/images/img_6.jpg" alt="Healthy bowl presentation" />
+            <img src="./images/img_2.jpg" alt="Fresh dish with garnish" />
+            <img src="./images/img_6.jpg" alt="Healthy bowl presentation" />
           </div>
           <div className="gallery-copy">
             <h3>Dining that looks as good as it tastes.</h3>

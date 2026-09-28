@@ -2,15 +2,15 @@ import { useState } from "react";
 import "./Gallery1.css";
 
 const images = [
-  { src: "/images/img_1.jpg", title: "Paper Pouch" },
-  { src: "/images/img_2.jpg", title: "Fresh Dish" },
-  { src: "/images/img_3.jpg", title: "Sushi Roll" },
-  { src: "/images/img_4.jpg", title: "Grill Plate" },
-  { src: "/images/img_5.jpg", title: "Steak Salad" },
-  { src: "/images/img_6.jpg", title: "Healthy Bowl" },
-  { src: "/images/img_7.jpg", title: "Dinner Time" },
-  { src: "/images/img_8.jpg", title: "Special Dish" },
-  { src: "/images/food_21.png", title: "Classic Meal" },
+  { src: `${import.meta.env.BASE_URL}images/img_1.jpg`, title: "Paper Pouch" },
+  { src: `${import.meta.env.BASE_URL}images/img_2.jpg`, title: "Fresh Dish" },
+  { src: `${import.meta.env.BASE_URL}images/img_3.jpg`, title: "Sushi Roll" },
+  { src: `${import.meta.env.BASE_URL}images/img_4.jpg`, title: "Grill Plate" },
+  { src: `${import.meta.env.BASE_URL}images/img_5.jpg`, title: "Steak Salad" },
+  { src: `${import.meta.env.BASE_URL}images/img_6.jpg`, title: "Healthy Bowl" },
+  { src: `${import.meta.env.BASE_URL}images/img_7.jpg`, title: "Dinner Time" },
+  { src: `${import.meta.env.BASE_URL}images/img_8.jpg`, title: "Special Dish" },
+  { src: `${import.meta.env.BASE_URL}images/food_21.png`, title: "Classic Meal" },
 ];
 
 export default function Gallery() {
