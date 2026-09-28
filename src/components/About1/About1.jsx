@@ -1,4 +1,3 @@
-import React from "react";
 import "./About1.css";
 
 const promises = [

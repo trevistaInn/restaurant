@@ -1,4 +1,3 @@
-import React from "react";
 import "./DeliciousSection.css";
 
 import burger from "../../assets/assets/burger.png";

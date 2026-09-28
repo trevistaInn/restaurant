@@ -1,4 +1,3 @@
-import React from 'react'
 import "./Menu2.css"
 const Menu2 = () => {
   return (

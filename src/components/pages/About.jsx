@@ -1,4 +1,3 @@
-import React from "react";
 import About1 from '../../components/About1/About1.jsx';
 const About = () => {
   return (

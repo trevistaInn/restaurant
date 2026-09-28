@@ -1,16 +1,16 @@
-import React from "react";
 import "./Menu1.css";
 
 const menuItems = [
-  { title: "Etiam dictum Nunc enim", desc: "Vivamus sit amet felis", price: "$19.9" },
-  { title: "Etiam dictum Nunc enim", desc: "Vivamus sit amet felis", price: "$19.9" },
-  { title: "Etiam dictum Nunc enim", desc: "Vivamus sit amet felis", price: "$19.9" },
-  { title: "Etiam dictum Nunc enim", desc: "Vivamus sit amet felis", price: "$19.9" },
-  { title: "Etiam dictum Nunc enim", desc: "Vivamus sit amet felis", price: "$19.9" },
-  { title: "Etiam dictum Nunc enim", desc: "Vivamus sit amet felis", price: "$19.9" }
+  // { title: "Etiam dictum Nunc enim", desc: "Vivamus sit amet felis", price: "$19.9" },
+  // { title: "Etiam dictum Nunc enim", desc: "Vivamus sit amet felis", price: "$19.9" },
+  // { title: "Etiam dictum Nunc enim", desc: "Vivamus sit amet felis", price: "$19.9" },
+  // { title: "Etiam dictum Nunc enim", desc: "Vivamus sit amet felis", price: "$19.9" },
+  // { title: "Etiam dictum Nunc enim", desc: "Vivamus sit amet felis", price: "$19.9" },
+  // { title: "Etiam dictum Nunc enim", desc: "Vivamus sit amet felis", price: "$19.9" }
 ];
 
 function Menu1() {
+  const {Food_list} = useContext(MyContext)
   // Split menuItems into two columns
   const mid = Math.ceil(menuItems.length / 2);
   const leftItems = menuItems.slice(0, mid);

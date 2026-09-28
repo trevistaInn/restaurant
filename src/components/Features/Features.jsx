@@ -1,4 +1,3 @@
-import React from "react";
 import "./Features.css";
 import { FaUtensils, FaWineGlassAlt, FaHamburger } from "react-icons/fa";
 import { GiChefToque } from "react-icons/gi";

@@ -1,4 +1,3 @@
-import React from "react";
 import "../../styles/pages/Home.css";
 import Features from "../../components/Features/Features"
 import Menu1 from "../../components/menu/Menu1";
@@ -19,10 +18,6 @@ const Home = () => {
       <DeliciousSection />
       <Features/>
       <Menu1/>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
       <Gallery1/>
       <Chef/>
        {/* <BlogSection/> */}

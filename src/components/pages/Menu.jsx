@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Menu2 from "../../components/Menu2/Menu2.jsx";
 import ExploreMenu from '../../components/ExploreMenu/ExploreMenu.jsx';
 import FoodDisplay from '../FoodDisplay/FoodDisplay.jsx';

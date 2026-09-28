@@ -1,9 +1,8 @@
-import React,{useState} from 'react'
 import {assets} from '../../assets/assets/assets.js'
 import './FoodItems.css'
 const FoodItems = ({name,price,description,image}) => {
     // eslint-disable-next-line no-unused-vars
-    const [itemsCount,setItemsCount] = useState(0);
+    // const [itemsCount,setItemsCount] = useState(0);
   return (
     <div className='food-item'>
         <div className="food-item-img-container">
