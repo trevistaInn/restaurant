@@ -1,6 +1,6 @@
 import "./DeliciousSection.css";
 
-import burger from "../../assets/assets/burger.png";
+import burger from "../../assets/assets/Burger.png";
 
 
 const DeliciousSection = () => {
