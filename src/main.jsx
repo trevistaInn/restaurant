@@ -5,7 +5,7 @@ import App from './App';
 
 createRoot(document.getElementById('root')).render(
   <MyContextProvider>
-    <BrowserRouter>
+    <BrowserRouter basename="/restaurant">
       <App />
     </BrowserRouter>
   </MyContextProvider>
